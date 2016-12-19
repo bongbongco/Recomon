@@ -94,6 +94,41 @@ return dot_product/magnitude
 #### 기억 기반 협력 필터링 - 유사도 측정
 
 ##### 피어슨 상관계수
+```python
+#def - p1과 p2에 대한 피어슨 상관 계수를 리턴
+def sim_pearson(prefs, p1, p2):
+	si = {}
+	for item in prefs[p1]:
+		for item in prefs[p2]: 
+			si[item] = 1
+
+	# 공통 요소의 개수를 구함, 없으면 종료
+	n = len(si)
+	if n==0 
+		return 0
+
+		# 모든 선호도를 합산함
+	sum1 = sum([prefs[p1][it] for it in si])
+	sum2 = sum([prefs[p2][it] for it in si])
+
+	# 제곱의 합을 계산
+	sum1Sq = sum([pow(prefs[p1][it], 2) for it in si])
+	sum2Sq = sum([pow(prefs[p2][it], 2) for it in si])
+	
+	# 곱의 합을 계산
+	pSum = sum([prefs[p1][it] * prefs[p2][it] for it in si])
+	
+	# 피어슨 점수 계산
+	num = pSum - (sum1 * sum2 / n)
+	den = sqrt((sum1Sq - pow(sum1, 2) / n) * (sum2Sq - pow(sum2, 2)/n))
+	if den==0: 
+		return 0
+	
+	r = num/den
+	return r
+```
+[Reference](http://atin.tistory.com/57)  
+
 ##### 보완 코사인 유사도
 ##### 스피어만 순위 상관계수
 
