@@ -130,7 +130,10 @@ def sim_pearson(prefs, p1, p2):
 [Reference](http://atin.tistory.com/57)  
 
 ##### 2.1.2. 보완 코사인 유사도
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+\begin{bmatrix}
+1 &1 \\ 
+ 1& 1
+\end{bmatrix}
 ##### 2.1.3. 스피어만 순위 상관계수
 
 #### 2.2. 기억 기반 협력 필터링 - 선호도 예측
