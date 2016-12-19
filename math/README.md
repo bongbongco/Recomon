@@ -77,7 +77,8 @@ Top words in document 3
     Word: revolver, TF-IDF: 0.01382
     Word: Colt, TF-IDF: 0.01382
 ~~~
-Reference Url : http://stevenloria.com/finding-important-words-in-a-document-using-tf-idf/
+[Reference Url](http://stevenloria.com/finding-important-words-in-a-document-using-tf-idf/)
+
 ##### 코사인 유사도
 
 ### 협력 필터링
