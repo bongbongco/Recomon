@@ -1,11 +1,11 @@
 # 수식 학습
 ## 첫 번째 논문 : '추천 시스템 기법 연구동향 분석' 에 포함된 수식
 
-### 콘텐츠 기반 접근 방식
+### 1. 콘텐츠 기반 접근 방식
 
-#### 아이템 속성 분석
+#### 1.1. 아이템 속성 분석
 
-##### TF - IDF(단어 가중치)
+##### 1.1.1. TF - IDF(단어 가중치)
 ```python
 from __future__ import division, unicode_literals
 
@@ -79,7 +79,7 @@ Top words in document 3
 ~~~
 [Reference Url](http://stevenloria.com/finding-important-words-in-a-document-using-tf-idf/)  
 
-##### 코사인 유사도
+##### 1.1.2. 코사인 유사도
 ```python
 def cosine_similarity(vector1, vector2):
     dot_product = sum(p*q for p,q in zip(vector1, vector2))
@@ -89,11 +89,11 @@ def cosine_similarity(vector1, vector2):
 return dot_product/magnitude
 ```
 [Reference Url](http://billchambers.me/tutorials/2014/12/22/cosine-similarity-explained-in-python.html)  
-### 협력 필터링
+### 2. 협력 필터링
 
-#### 기억 기반 협력 필터링 - 유사도 측정
+#### 2.1. 기억 기반 협력 필터링 - 유사도 측정
 
-##### 피어슨 상관계수
+##### 2.1.1. 피어슨 상관계수
 ```python
 #def - p1과 p2에 대한 피어슨 상관 계수를 리턴
 def sim_pearson(prefs, p1, p2):
@@ -129,54 +129,54 @@ def sim_pearson(prefs, p1, p2):
 ```
 [Reference](http://atin.tistory.com/57)  
 
-##### 보완 코사인 유사도
-##### 스피어만 순위 상관계수
+##### 2.1.2. 보완 코사인 유사도
+##### 2.1.3. 스피어만 순위 상관계수
 
-#### 기억 기반 협력 필터링 - 선호도 예측
+#### 2.2. 기억 기반 협력 필터링 - 선호도 예측
 
-##### 가중합
-##### 단순 가중 평균
+##### 2.2.1. 가중합
+##### 2.2.2. 단순 가중 평균
 
-#### 모델 기반 협력 필터링
+#### 2.3. 모델 기반 협력 필터링
 
-##### 나이브 베이즈
+##### 2.3.1. 나이브 베이즈
 
-#### 차원 축소
+#### 2.4. 차원 축소
 
-##### Truncated-SVD
+##### 2.4.1. Truncated-SVD
 
-#### 하이브리스 시스템
+#### 2.5. 하이브리스 시스템
 
-##### LSI
-##### PLSI
+##### 2.5.1. LSI
+##### 2.5.2. PLSI
 
-### 평가 방법
+### 3. 평가 방법
 
-#### 점수 예측 평가방법
+#### 3.1. 점수 예측 평가방법
 
-##### MSE
-##### RMSE
-##### MAE
-##### NMAE
+##### 3.1.1. MSE
+##### 3.1.2. RMSE
+##### 3.1.3. MAE
+##### 3.1.4. NMAE
 
-#### 아이템 추천 평가방법
+#### 3.2. 아이템 추천 평가방법
 
-##### misclassification ratio
-##### Precision
-##### Recall
-##### F-measure
+##### 3.2.1. misclassification ratio
+##### 3.2.2. Precision
+##### 3.2.3. Recall
+##### 3.2.4. F-measure
 
-#### 정확도 기반 평가방법
+#### 3.3. 정확도 기반 평가방법
 
-##### EU(시스템 효용)
-##### hit-rate
-##### hit-rank
+##### 3.3.1. EU(시스템 효용)
+##### 3.3.2. hit-rate
+##### 3.3.3. hit-rank
 
-#### 다양성 기반 평가방법
+#### 3.4. 다양성 기반 평가방법
 
-##### diversity
-##### novelty
-##### 추천 아이템의 개인화 정도
-##### 특정한 상황에서의 특이성
-##### unexpecteness
-##### prediction coverage
+##### 3.4.1. diversity
+##### 3.4.2. novelty
+##### 3.4.3. 추천 아이템의 개인화 정도
+##### 3.4.4. 특정한 상황에서의 특이성
+##### 3.4.5. unexpecteness
+##### 3.4.6. prediction coverage
