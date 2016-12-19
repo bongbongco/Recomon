@@ -140,7 +140,7 @@ def sim_pearson(prefs, p1, p2):
 #### 2.3. 모델 기반 협력 필터링
 
 ##### 2.3.1. 나이브 베이즈
-
+[Reference](How To Implement Naive Bayes From Scratch in Python)  
 #### 2.4. 차원 축소
 
 ##### 2.4.1. Truncated-SVD
