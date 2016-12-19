@@ -6,7 +6,7 @@
 #### 아이템 속성 분석
 
 ##### TF - IDF(단어 가중치)
-~~~
+```python
 from __future__ import division, unicode_literals
 
 import math
@@ -23,7 +23,7 @@ def idf(word, bloblist):
 
 def tfidf(word, blob, bloblist):
     return tf(word, blob) * idf(word, bloblist)
-~~~
+```
 
 ##### 코사인 유사도
 
