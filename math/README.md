@@ -24,6 +24,10 @@ def idf(word, bloblist):
 def tfidf(word, blob, bloblist):
     return tf(word, blob) * idf(word, bloblist)
 ```
++ tf(word, blob) 용어의 빈도 계산
++ n_containing(word, bloblist) 문서 내 포함된 단어의 수를 반환
++ idf(word, bloblist) 역 문서 빈도 계산 (일반적인 단어일 수록 IDF가 낮음)
++ tfidf(word, blob, bloblist) TF-IDF 점수를 계산
 
 ##### 코사인 유사도
 
