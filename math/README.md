@@ -80,6 +80,14 @@ Top words in document 3
 [Reference Url](http://stevenloria.com/finding-important-words-in-a-document-using-tf-idf/)
 
 ##### 코사인 유사도
+```python
+def cosine_similarity(vector1, vector2):
+    dot_product = sum(p*q for p,q in zip(vector1, vector2))
+    magnitude = math.sqrt(sum([val**2 for val in vector1])) * math.sqrt(sum([val**2 for val in vector2]))
+    if not magnitude:
+        return 0
+return dot_product/magnitude
+```
 
 ### 협력 필터링
 
