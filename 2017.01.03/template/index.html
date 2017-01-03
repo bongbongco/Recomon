@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h2>Select movie</h2>
+  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
+  <form action="{{ url_for('recomon') }}" method=post>
+    <dl>
+      <dt>Username:
+      <dd><select name="category">
+            <option value="">추천 방법</option>
+            <option value="1">상품 기반 협업 필터링</option>
+            <option value="2">사용자 기반 협업 필터링</option>
+        </select>
+      <dt>영화 선택
+      <dd><input type=text name=movie_name>
+      <dd><input type=submit value="Watch a movie">
+    </dl>
+  </form>
+{% endblock %}

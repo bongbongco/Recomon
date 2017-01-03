@@ -1,0 +1,5 @@
+{% extends "layout.html" %}
+{% block body %}
+    <h2>다음 영화는 {{ recommon_movie }}를 보시길 추천합니다.</h2>
+    <a href={{url_for('hello')}}>다른 영화 보기</a>
+{% endblock %}
